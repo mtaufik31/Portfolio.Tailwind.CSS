@@ -1260,6 +1260,11 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  display: none;
+}
+
 @media (min-width: 640px) {
   .sm\:text-4xl {
     font-size: 2.25rem;

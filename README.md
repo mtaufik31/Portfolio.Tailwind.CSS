@@ -1,0 +1,1 @@
+<p align="center" style="background-color: #fff"><a href="http://postbox.free.nf/"><img src="dist/img/gallery/image.png" width="400" alt="Laravel Logo"></a></p>
