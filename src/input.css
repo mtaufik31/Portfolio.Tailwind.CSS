@@ -28,3 +28,35 @@ body {
 .hamburger-active > span:nth-child(3) {
     @apply origin-bottom-left -rotate-45;
 }
+
+.typing-text {
+    border-right: 2px solid #333; /* Cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    font-family: monospace;
+}
+
+.cursor-line {
+    font-family: monospace;
+    display: inline-block;
+    animation: blink-cursor 0.7s step-end infinite; /* Blinking effect */
+}
+
+@keyframes blink-cursor {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Blinking effect for cursor */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typing-text {
+    animation: blink 0.7s step-end infinite;
+}
+
