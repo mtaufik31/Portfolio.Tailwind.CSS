@@ -29,16 +29,23 @@ body {
     @apply origin-bottom-left -rotate-45;
 }
 
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+    100% { transform: translateY(0); }
+}
+
+/* Teks yang melayang */
+.floating-img {
+    animation: float 2s ease-in-out infinite; 
+}
+
 .typing-text {
-    border-right: 2px solid #333; /* Cursor effect */
     white-space: nowrap;
     overflow: hidden;
-    display: inline-block;
-    font-family: monospace;
 }
 
 .cursor-line {
-    font-family: monospace;
     display: inline-block;
     animation: blink-cursor 0.7s step-end infinite; /* Blinking effect */
 }
